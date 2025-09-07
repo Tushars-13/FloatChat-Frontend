@@ -1,0 +1,8 @@
+{
+  "short_name": "Floatchat",
+  "name": "Floatchat - Ocean Data Explorer",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
