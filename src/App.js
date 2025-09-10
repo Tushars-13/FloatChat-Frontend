@@ -254,13 +254,7 @@ const Floatchat = () => {
             {sidebarOpen && <span>Analytics</span>}
           </button>
 
-          <button
-            title="Application settings and preferences"
-            className={`w-full flex items-center gap-3 px-4 py-3 hover:${darkMode ? 'bg-gray-700' : 'bg-blue-800'} transition-colors`}
-          >
-            <Settings className="w-5 h-5" />
-            {sidebarOpen && <span>Settings</span>}
-          </button>
+          
         </nav>
 
         <div className="absolute bottom-16 left-4 right-4">
