@@ -3,6 +3,10 @@ import { Send, Map, BarChart3, Settings, Menu, X, Download, Filter, Info, Moon, 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Plot from 'react-plotly.js';
 import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
 
 const Floatchat = () => {
   const [messages, setMessages] = useState([
@@ -126,6 +130,17 @@ const Floatchat = () => {
   ];
 
   // Map Component
+  const DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  iconSize: [25, 41],
+  shadowSize: [41, 41],
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
+
   const MapView = () => (
     <MapContainer center={[20, 67]} zoom={5} style={{ height: '100%', width: '100%' }}>
       <TileLayer
