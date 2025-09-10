@@ -9,6 +9,7 @@ const ChartsView = () => (
         <TemperatureChart />
       </div>
       {/* Add more chart components here */}
+      
     </div>
   </div>
 );
